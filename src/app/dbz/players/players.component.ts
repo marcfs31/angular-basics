@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Player } from '../interfaces/dbz.interface';
 import { DbzService } from '../services/dbz.service';
 
@@ -6,6 +6,7 @@ import { DbzService } from '../services/dbz.service';
     selector: 'app-players',
     templateUrl: './players.component.html',
     styleUrls: ['./players.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class PlayersComponent {

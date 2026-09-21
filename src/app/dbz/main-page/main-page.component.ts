@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Player } from '../interfaces/dbz.interface';
 import { DbzService } from '../services/dbz.service';
 
@@ -6,6 +6,7 @@ import { DbzService } from '../services/dbz.service';
     selector: 'app-main-page',
     templateUrl: './main-page.component.html',
     styleUrls: ['./main-page.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class MainPageComponent {
