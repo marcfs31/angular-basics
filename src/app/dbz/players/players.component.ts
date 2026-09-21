@@ -3,9 +3,10 @@ import { Player } from '../interfaces/dbz.interface';
 import { DbzService } from '../services/dbz.service';
 
 @Component({
-  selector: 'app-players',
-  templateUrl: './players.component.html',
-  styleUrls: ['./players.component.css']
+    selector: 'app-players',
+    templateUrl: './players.component.html',
+    styleUrls: ['./players.component.css'],
+    standalone: false
 })
 export class PlayersComponent {
   // @Input('data') players: Player[] = [];

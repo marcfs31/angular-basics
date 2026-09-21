@@ -19,7 +19,8 @@ import { Component } from '@angular/core';
     <button (click)="accumulate(base)">{{base}}</button>
     <span>{{number}}</span>
     <button (click)="accumulate(-base)">{{-base}}</button>
-    `
+    `,
+    standalone: false
 })
 export class CounterComponent {
   title: string = 'Counter app';

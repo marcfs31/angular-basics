@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
+    selector: 'app-list',
+    templateUrl: './list.component.html',
+    standalone: false
 })
 export class ListComponent {
   heroes: string[] = ['Spiderman', 'Ironman', 'Hulk', 'Thor', 'Captain America'];
