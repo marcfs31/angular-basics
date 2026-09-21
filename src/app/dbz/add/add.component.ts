@@ -1,11 +1,13 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ChangeDetectionStrategy } from '@angular/core';
 import { Player } from '../interfaces/dbz.interface';
 import { DbzService } from '../services/dbz.service';
 
 @Component({
-  selector: 'app-add',
-  templateUrl: './add.component.html',
-  styleUrls: ['./add.component.css']
+    selector: 'app-add',
+    templateUrl: './add.component.html',
+    styleUrls: ['./add.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class AddComponent {
   @Input() newPlayer: Player = {

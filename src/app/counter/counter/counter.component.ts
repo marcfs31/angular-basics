@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-counter',
@@ -19,7 +19,9 @@ import { Component } from '@angular/core';
     <button (click)="accumulate(base)">{{base}}</button>
     <span>{{number}}</span>
     <button (click)="accumulate(-base)">{{-base}}</button>
-    `
+    `,
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class CounterComponent {
   title: string = 'Counter app';
